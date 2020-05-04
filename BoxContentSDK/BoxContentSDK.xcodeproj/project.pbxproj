@@ -402,7 +402,6 @@
 		63832D001E3A9A8200F7211E /* recent_item_default_fields_shared.json in Resources */ = {isa = PBXBuildFile; fileRef = 63832CFF1E3A9A8200F7211E /* recent_item_default_fields_shared.json */; };
 		63832D021E3AA68500F7211E /* BOXRecentItemsRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63832D011E3AA68500F7211E /* BOXRecentItemsRequestTests.m */; };
 		63832D041E3AAAB000F7211E /* recent_items.json in Resources */ = {isa = PBXBuildFile; fileRef = 63832D031E3AAAB000F7211E /* recent_items.json */; };
-		6AAB688E1E8093730054153A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11035E71A1FF6EC00B46F6D /* MobileCoreServices.framework */; };
 		704DBA211AD1F7D8001E28BB /* get_items_3_5_duped.json in Resources */ = {isa = PBXBuildFile; fileRef = 704DBA201AD1F7D8001E28BB /* get_items_3_5_duped.json */; };
 		70881FA01ACF67ED0023CDF3 /* BOXFolderItemsRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CC169C1ACCA06300C3CC80 /* BOXFolderItemsRequestTests.m */; };
 		70CC169F1ACCA8AD00C3CC80 /* get_items_0_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 70CC169E1ACCA8AD00C3CC80 /* get_items_0_2.json */; };
@@ -423,6 +422,7 @@
 		94D51FC4207EB9B1008341A7 /* BOXRepresentationInfoRequest.m in Headers */ = {isa = PBXBuildFile; fileRef = 94D51FC1207D9347008341A7 /* BOXRepresentationInfoRequest.m */; settings = {ATTRIBUTES = (Public, ); }; };
 		94F5E2CB2083B6E300334AEC /* BOXRepresentationInfoRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E2CA2083B6E300334AEC /* BOXRepresentationInfoRequestTests.m */; };
 		A59A40B31EA1771000BF4113 /* file_all_fields_representations.json in Resources */ = {isa = PBXBuildFile; fileRef = A59A40B21EA1771000BF4113 /* file_all_fields_representations.json */; };
+		C1ECF2CA2460530E00AF63EC /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1ECF2C92460530E00AF63EC /* CoreServices.framework */; };
 		C53EC2631A388E9F0007C8A7 /* BOXCommentAddRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C53EC2621A388E9F0007C8A7 /* BOXCommentAddRequestTests.m */; };
 		C53EC2991A389F2C0007C8A7 /* BOXCommentDeleteRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C53EC2981A389F2C0007C8A7 /* BOXCommentDeleteRequestTests.m */; };
 		C53EC29F1A38A1640007C8A7 /* BOXCommentRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C53EC29E1A38A1640007C8A7 /* BOXCommentRequestTests.m */; };
@@ -804,6 +804,7 @@
 		AA73ED041E36C2250010F6D8 /* BOXRecentItemsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOXRecentItemsRequest.m; sourceTree = "<group>"; };
 		AA73ED071E36C2620010F6D8 /* BOXContentClient+RecentItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BOXContentClient+RecentItems.h"; sourceTree = "<group>"; };
 		AA73ED081E36C2620010F6D8 /* BOXContentClient+RecentItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BOXContentClient+RecentItems.m"; sourceTree = "<group>"; };
+		C1ECF2C92460530E00AF63EC /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		C53EC2421A3873090007C8A7 /* BOXComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOXComment.h; sourceTree = "<group>"; };
 		C53EC2431A3873090007C8A7 /* BOXComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOXComment.m; sourceTree = "<group>"; };
 		C53EC25C1A38855E0007C8A7 /* BOXCommentAddRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOXCommentAddRequest.h; sourceTree = "<group>"; };
@@ -1018,7 +1019,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AAB688E1E8093730054153A /* MobileCoreServices.framework in Frameworks */,
+				C1ECF2CA2460530E00AF63EC /* CoreServices.framework in Frameworks */,
 				15605DA01A2013B800C5EE5A /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1640,6 +1641,7 @@
 		E470433D16D41DC500FED29A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1ECF2C92460530E00AF63EC /* CoreServices.framework */,
 				C5F668A41E89CE1A00A3DD36 /* XcodeKit.framework */,
 				C5F6688B1E89CA9F00A3DD36 /* XCTest.framework */,
 				F05F80E717B3FD8C001182FB /* iOS */,
@@ -2121,6 +2123,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
